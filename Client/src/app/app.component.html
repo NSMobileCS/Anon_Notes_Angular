@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  <app-note-create></app-note-create>
+  <app-note *ngFor='let note of notes' [note]='note'></app-note>
+<router-outlet></router-outlet>
